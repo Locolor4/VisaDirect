@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('sendPayment', [VisaController::class, 'sendPayment'])->name('sendPayment');
+Route::post('createPullFunds', [VisaController::class, 'createPullFunds'])->name('createPullFunds');
+Route::get('readPullFunds', [VisaController::class, 'readPullFunds'])->name('readPullFunds');
